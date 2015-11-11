@@ -1,0 +1,18 @@
+{
+    "name": "sae_nodejs_helloworld",
+    "description": "hello world",
+    "version": "0.0.1",
+    "private": true,
+    "author": {
+        "name": "sae",
+        "email": "saemail@sina.cn"
+    },
+    "dependencies" : {
+    },
+    "engines": {
+        "node": "0.10.36"
+    },
+    "scripts":{
+        "start": "node index.js"
+    }
+}
