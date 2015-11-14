@@ -1,17 +1,14 @@
 {
-  "name": "nodejs-getting-started",
-  "description": "getting started with nodejs on sinacloud platform",
-  "version": "0.0.1",
+  "name": "socket.io-chat",
+  "version": "0.0.0",
+  "description": "A simple chat client using socket.io",
+  "main": "index.js",
+  "author": "Grant Timmerman",
   "private": true,
-  "author": {
-    "name": "sae",
-    "email": "saemail@sina.cn"
-  },
+  "license": "BSD",
   "dependencies": {
-    "express": "^4.13.3"
-  },
-  "engines": {
-    "node": "0.10.36"
+    "express": "3.4.8",
+    "socket.io": "^1.3.7"
   },
   "scripts": {
     "start": "node index.js"
