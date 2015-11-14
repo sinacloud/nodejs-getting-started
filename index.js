@@ -1,9 +1,8 @@
-var http = require("http");
+var express = require('express')
+var app = express()
 
-http.createServer(function(request, response) {
-    response.writeHead(200, {"Content-Type": "text/plain"});
-    response.write('hello nodejs');  
-    response.end();
-}).listen(5050);
+app.get('/', function (req, res) {
+  res.send('Hello World')
+})
 
-console.log("nodejs start listen 5050 port!");
+app.listen(process.env.PORT || 5050)

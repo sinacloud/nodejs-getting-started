@@ -1,18 +1,19 @@
 {
-    "name": "sae_nodejs_helloworld",
-    "description": "hello world",
-    "version": "0.0.1",
-    "private": true,
-    "author": {
-        "name": "sae",
-        "email": "saemail@sina.cn"
-    },
-    "dependencies" : {
-    },
-    "engines": {
-        "node": "0.10.36"
-    },
-    "scripts":{
-        "start": "node index.js"
-    }
+  "name": "nodejs-getting-started",
+  "description": "getting started with nodejs on sinacloud platform",
+  "version": "0.0.1",
+  "private": true,
+  "author": {
+    "name": "sae",
+    "email": "saemail@sina.cn"
+  },
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "engines": {
+    "node": "0.10.36"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
 }
