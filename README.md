@@ -30,4 +30,4 @@ $ git push sinacloud master:1
 
 ## 相关文档
 
-- [NodeJS应用部署指南](http://www.sinacloud.com/sc2/nodejs-getting-started.html)
+- [NodeJS应用部署指南](http://www.sinacloud.com/doc/sc2/nodejs-getting-started.html)
