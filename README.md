@@ -16,13 +16,13 @@ $ npm start
 首先，提交代码到你的sinacloud应用的git仓库。
 
 ```
-$ git remote add sinacloud <git-repos-url-for-your-application>
+$ git remote add sinacloud $GIT_REPOS_URL_FOR_YOUR_APPLICATIRON
 $ git push sinacloud master:1
 ```
 
 登陆sinacloud容器云的管理页面，在部署页面中，点击部署。
 
-部署完成之后，你就可以通过 http://<appname>.sinaapp.com 来访问你的应用了。
+部署完成之后，你就可以通过 http://$APPNAME.sinaapp.com 来访问你的应用了。
 
 ## 更多示例
 
