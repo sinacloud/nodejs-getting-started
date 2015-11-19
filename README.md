@@ -1,33 +1,7 @@
 # NodeJS应用示例
 
-## 本地运行
+From: https://github.com/chjj/tty.js/
 
-```
-$ git clone https://github.com/sinacloud/nodejs-getting-started.git
-$ cd nodejs-getting-started
-$ npm install
-$ npm start
-```
+浏览器中的终端，你可以直接部署到sinacloud上，熟悉一下sinacloud容器云的基本环境。
 
-现在，本示例应用已经跑在了你的 localhost:5050 端口上了。
-
-## 部署到sinacloud
-
-首先，提交代码到你的sinacloud应用的git仓库。
-
-```
-$ git remote add sinacloud $GIT_REPOS_URL_FOR_YOUR_APPLICATIRON
-$ git push sinacloud master:1
-```
-
-登陆sinacloud容器云的管理页面，在部署页面中，点击部署。
-
-部署完成之后，你就可以通过 http://$APPNAME.sinaapp.com 来访问你的应用了。
-
-## 更多示例
-
-本git仓库的其它分支里还包含了Socket.io、MySQL服务、Memcached服务等的使用示例。
-
-## 相关文档
-
-- [NodeJS应用部署指南](http://www.sinacloud.com/doc/sc2/nodejs-getting-started.html)
+![screenshot](screenshot.png?raw=true)

@@ -1,8 +1,9 @@
-var express = require('express')
-var app = express()
+var tty = require('tty.js');
 
-app.get('/', function (req, res) {
-  res.send('Hello World')
-})
+var app = tty.createServer({
+  shell: 'bash',
+  users: {foo: 'bar'},
+  port: process.env.PORT
+});
 
-app.listen(process.env.PORT || 5050)
+app.listen();

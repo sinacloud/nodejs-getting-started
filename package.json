@@ -1,6 +1,6 @@
 {
-  "name": "nodejs-getting-started",
-  "description": "getting started with nodejs on sinacloud platform",
+  "name": "terminal.js",
+  "description": "terminal.js",
   "version": "0.0.1",
   "private": true,
   "author": {
@@ -8,10 +8,10 @@
     "email": "saemail@sina.cn"
   },
   "dependencies": {
-    "express": "^4.13.3"
+    "tty.js": "^0.2.15"
   },
   "engines": {
-    "node": "0.10.36"
+      "node": "0.10"
   },
   "scripts": {
     "start": "node index.js"
