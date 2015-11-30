@@ -8,7 +8,8 @@
     "email": "saemail@sina.cn"
   },
   "dependencies": {
-    "express": "^4.13.3"
+    "express": "^4.13.3",
+    "memjs": "^0.8.7"
   },
   "engines": {
     "node": "0.10.36"
