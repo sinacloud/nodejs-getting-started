@@ -1,33 +1,36 @@
 # NodeJS应用示例
 
-## 本地运行
+MySQL服务使用示例
+
+## 安装node-mysql
 
 ```
-$ git clone https://github.com/sinacloud/nodejs-getting-started.git
-$ cd nodejs-getting-started
-$ npm install
-$ npm start
+$ npm install --save mysql
 ```
 
-现在，本示例应用已经跑在了你的 localhost:5050 端口上了。
+## 连接数据库
 
-## 部署到sinacloud
+```js
+var mysql      = require('mysql');
 
-首先，提交代码到你的sinacloud应用的git仓库。
+// 连接共享型MySQL
+var connection = mysql.createConnection({
+    host     : process.env.MYSQL_HOST,
+    port     : process.env.MYSQL_PORT,
+    user     : process.env.ACCESSKEY,
+    password : process.env.SECRETKEY,
+    database : 'app_' + process.env.APPNAME
+});
+```
+
+## 操作数据库
 
 ```
-$ git remote add sinacloud $GIT_REPOS_URL_FOR_YOUR_APPLICATIRON
-$ git push sinacloud master:1
+connection.query('show status', function(err, rows) {
+    if (err) {
+        // 处理错误
+    }
+
+    // 处理query的结果 
+});
 ```
-
-登陆sinacloud容器云的管理页面，在部署页面中，点击部署。
-
-部署完成之后，你就可以通过 http://$APPNAME.sinaapp.com 来访问你的应用了。
-
-## 更多示例
-
-本git仓库的其它分支里还包含了Socket.io、MySQL服务、Memcached服务等的使用示例。
-
-## 相关文档
-
-- [NodeJS应用部署指南](http://www.sinacloud.com/doc/sc2/nodejs-getting-started.html)
