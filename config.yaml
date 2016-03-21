@@ -1,4 +1,4 @@
 cron:
 - description: cron_test
   url: /cron/ping
-  schedule: "*/5 * * * *"
+  schedule: "*/2 * * * *"
