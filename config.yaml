@@ -1,0 +1,4 @@
+cron:
+- description: cron_test
+  url: /cron/make
+  schedule: "*/5 * * * *"
