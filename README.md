@@ -17,7 +17,7 @@ $ npm start
 
 ```
 $ git remote add sinacloud $GIT_REPOS_URL_FOR_YOUR_APPLICATIRON
-$ git push sinacloud master:1
+$ git push sinacloud master
 ```
 
 登陆sinacloud容器云的管理页面，在部署页面中，点击部署。
