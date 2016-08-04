@@ -9,7 +9,7 @@
   "dependencies": {
     "express": "3.4.8",
     "socket.io": "^1.3.7",
-    "socket.io-redis": "^1.0.0"
+    "socket.io-redis": "git://github.com/socketio/socket.io-redis#708de4cb7e42107084f51dd37f3060d7899b3fdd"
   },
   "scripts": {
     "start": "node index.js"
